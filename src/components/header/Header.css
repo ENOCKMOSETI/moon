@@ -1,0 +1,116 @@
+nav {
+    display: flex;
+    padding: 1rem;
+}
+
+nav h1 {
+    display: flex;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - 150px);
+}
+
+nav ul div {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+}
+
+h1, li {
+    margin: 0 1.5rem;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30;
+    margin-top: 25rem;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 1rem;
+}
+
+.top {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.top li {
+    margin: 1rem;
+}
+
+.top li:hover {
+    cursor: pointer;
+
+}
+
+.studies {
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    padding: .5rem 1rem;
+}
+
+.studies h3 {
+    color: #333;
+}
+
+.dropdowns button {
+    border: none;
+    background-color: #d3d3d3;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+}
+
+.dropdown:hover + .dropdowns, .dropdowns:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    nav ul {
+        display: block;
+        flex-direction: column;
+    }
+
+    nav ul div {
+        display: block;
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .btn {
+        display: block;
+        padding: 1rem;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+    }
+}

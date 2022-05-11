@@ -1,0 +1,90 @@
+.footer {
+    background-color: black;
+    color: bisque;
+}
+
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+}
+
+.navbar {
+    display: flex;
+    white-space: nowrap;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.tt {
+    margin-left: 2rem;
+}
+
+.bs button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5rem;
+    margin: 1rem;
+}
+
+.bs img {
+    background-color: aliceblue;
+}
+
+.socials img {
+    background-color: white;
+    border-radius: .4rem;
+    margin: 0 9px;
+    border: 1px solid white;
+}
+
+.sub {
+    width: 50%;
+}
+
+.sub form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formcontrol input, select {
+    width: 100%;
+    background-color: #333;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.formcontrol2 {
+    margin-left: 50px;
+}
+
+.subs button {
+    background-color: #d3d3d3;
+    color: #333;
+    border-radius: 2rem;
+    border: none;
+    margin: 1rem 0;
+    padding: 1rem 6rem;
+}
+
+.cp {
+    padding: 2rem;
+    font-size: smaller;
+}
+
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        display: flex;
+        white-space: nowrap;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
